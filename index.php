@@ -26,16 +26,20 @@
           $projectName= 'Kurz Programators';
           $counter=3;
           $numbers=[0,1,1,2,3,5,8];
+          $pageName= 'Home';
+          $a=4;
+          $b=7;
+          $area=$a*$b;
           
-          
-          ?>
+            
+      ?>
     
   </head>
 
   <body>
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#"><?php echo $projectName?></a>
+      <a class="navbar-brand" href="#"><?php echo $projectName.' - '. $pageName?></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -89,6 +93,11 @@
       </div>
       <div class="container">
         <?php var_dump($numbers) 
+  ?>
+      </div>
+      
+      <div class="container">
+        <?php echo 'Obdelník o stranách a: '.$a. ' b: '. $b. ' má obsah: ' .$area
   ?>
       </div>
     </main><!-- /.container -->
