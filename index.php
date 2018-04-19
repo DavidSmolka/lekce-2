@@ -30,6 +30,14 @@
           $a=4;
           $b=7;
           $area=$a*$b;
+          $stranaA=6;
+          $stranaB=6;
+          $uhelBeta=60;
+          $stranaC=
+          $uhelAlfa=
+          $uhelGamma=
+          $obvod=
+          $obsah=
           
             
       ?>
@@ -100,6 +108,40 @@
         <?php echo 'Obdelník o stranách a: '.$a. ' b: '. $b. ' má obsah: ' .$area
   ?>
       </div>
+      
+      <div class="container">
+          <h2>Trojúhelník podle věty ssu</h2>
+      <div class="row">
+        <h4>
+          Vstupní parametry
+        </h4>
+        </div>
+        
+        <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Strana a</th>
+      <th scope="col">Strana b</th>
+      <th scope="col">Uhel Beta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><?php echo $stranaA?></td>
+      <td><?php echo $stranaB?></td>
+      <td><?php echo $uhelBeta?></td>
+    </tr>
+  </tbody>
+</table>
+        <div class="row">
+          <h4>
+            Vlastnosti trojuhelniku
+          </h4>
+         
+        </div>
+        
+      </div>
+          
     </main><!-- /.container -->
 
     <!-- Bootstrap core JavaScript
