@@ -14,12 +14,28 @@
 
     <!-- Custom styles for this template -->
     <link href="starter-template.css" rel="stylesheet">
+    
+    <?php
+          $text = 'Programators kurz';
+          $boolean=false;
+          $text1='Ahoj';
+          $text2='Davide!';  
+          $cislo=5;
+          $cislo2=5+$cislo;
+          $pole1= [2,'.'];
+          $projectName= 'Kurz Programators';
+          $counter=3;
+          $numbers=[0,1,1,2,3,5,8];
+          
+          
+          ?>
+    
   </head>
 
   <body>
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#"><?php echo $projectName?></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -29,7 +45,7 @@
           <li class="nav-item active">
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
+        <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
           </li>
           <li class="nav-item">
@@ -55,14 +71,26 @@
 
       <div class="starter-template">
         <h1>
-<?php
-  echo 'Centrální obrazovka všehomíra';
 
-?>
+<?php  echo $text1 ?> <?php  echo $text2 ?>
+          
+          
         </h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+        <p class="lead">
+        <?php 
+         echo $cislo2;
+          var_dump($pole1);
+          ?>
+        </p>
       </div>
-
+    <div class="container">
+      <?php echo 'Pocitadlo pristupu'. ' ' . $counter 
+  ?>
+      </div>
+      <div class="container">
+        <?php var_dump($numbers) 
+  ?>
+      </div>
     </main><!-- /.container -->
 
     <!-- Bootstrap core JavaScript
